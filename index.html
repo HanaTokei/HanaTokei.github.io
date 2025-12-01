@@ -1,102 +1,102 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>花时计 - Hanashidokei</title>
+    <title>Hanashidokei</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 花瓣背景 -->
+    <!-- Petal Background -->
     <canvas id="petals"></canvas>
 
-    <!-- 导航栏 -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-logo">🌸 花时计</div>
+        <div class="nav-logo">🌸 Hanashidokei</div>
         <div class="nav-links">
-            <a href="#home">首页</a>
-            <a href="#about">关于</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
         </div>
     </nav>
 
-    <!-- 全屏海报轮播 -->
+    <!-- Hero Slider -->
     <section class="hero-slider">
-        <!-- 海报1 -->
+        <!-- Slide 1 -->
         <div class="slide active">
             <div class="slide-bg">
-                <img src="images/poster-1.jpg" alt="海报1">
-                </div>
+                <img src="images/poster-1.jpg" alt="Poster 1">
+            </div>
             <div class="slide-overlay"></div>
             <div class="slide-content">
-                <h1 class="slide-title">花时计</h1>
-                <p class="slide-subtitle">Hanashidokei</p>
-                <p class="slide-description">时间陪伴成长的故事</p>
+                <h1 class="slide-title">Hanashidokei</h1>
+                <p class="slide-subtitle">Flower Clock</p>
+                <p class="slide-description">A story about time and growth</p>
             </div>
         </div>
 
-        <!-- 海报2 -->
+        <!-- Slide 2 -->
         <div class="slide">
-<div class="slide-bg">
-    <img src="images/poster-2.jpg" alt="海报2">
-</div>
+            <div class="slide-bg">
+                <img src="images/poster-2.jpg" alt="Poster 2">
+            </div>
             <div class="slide-overlay"></div>
             <div class="slide-content">
-                <h1 class="slide-title">时间的具象化</h1>
-                <p class="slide-description">每一刻都开出独特的花朵</p>
+                <h1 class="slide-title">The Shape of Time</h1>
+                <p class="slide-description">Every moment blooms its own flower</p>
             </div>
         </div>
 
-        <!-- 海报3 -->
+        <!-- Slide 3 -->
         <div class="slide">
-<div class="slide-bg">
-    <img src="images/poster-3.jpg" alt="海报3">
-</div>
+            <div class="slide-bg">
+                <img src="images/poster-3.jpg" alt="Poster 3">
+            </div>
             <div class="slide-overlay"></div>
             <div class="slide-content">
-                <h1 class="slide-title">陪伴与成长</h1>
-                <p class="slide-description">在时光中绽放的记忆</p>
+                <h1 class="slide-title">Companionship & Growth</h1>
+                <p class="slide-description">Memories that blossom through time</p>
             </div>
         </div>
 
-        <!-- 切换按钮 -->
+        <!-- Slide Buttons -->
         <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
         <button class="nav-btn next" onclick="changeSlide(1)">›</button>
 
-        <!-- 指示点 -->
+        <!-- Dots -->
         <div class="dots">
             <span class="dot active" onclick="goToSlide(0)"></span>
             <span class="dot" onclick="goToSlide(1)"></span>
             <span class="dot" onclick="goToSlide(2)"></span>
         </div>
 
-        <!-- 向下滚动提示 -->
+        <!-- Scroll Hint -->
         <div class="scroll-hint">
-            <span>向下滚动</span>
+            <span>Scroll Down</span>
             <span class="arrow">↓</span>
         </div>
     </section>
 
-    <!-- 简介区 -->
+    <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">关于项目</h2>
-            
+            <h2 class="section-title">About the Project</h2>
+
             <div class="about-content">
                 <div class="about-text">
-                    <p class="quote">"时间会带走一切，但也会留下最珍贵的回忆。"</p>
+                    <p class="quote">"Time takes everything away, but leaves the most precious memories behind."</p>
                     <p>
-                        <strong>花时计</strong> 是一个关于时间与陪伴的独立游戏项目。<br>
-                        在一个能够具象化时间的世界里，每一段陪伴都会开出独特的花朵。
+                        <strong>Hanashidokei</strong> is an indie game project about time and companionship.<br>
+                        In a world where time takes on physical form, every moment spent together blooms into a unique flower.
                     </p>
                     <div class="tags">
-                        <span class="tag">叙事冒险</span>
-                        <span class="tag">治愈系</span>
-                        <span class="tag">概念开发中</span>
+                        <span class="tag">Narrative Adventure</span>
+                        <span class="tag">Healing</span>
+                        <span class="tag">Concept in Development</span>
                     </div>
                 </div>
 
                 <div class="contact-box">
-                    <h3>联系方式</h3>
+                    <h3>Contact</h3>
                     <a href="mailto:your@email.com" class="contact-link">
                         <span>✉️</span>
                         <span>your@email.com</span>
@@ -113,28 +113,28 @@
             </div>
 
             <div class="status-box">
-                <h3>开发状态</h3>
+                <h3>Development Status</h3>
                 <div class="status-grid">
                     <div class="status-item">
-                        <span class="status-label">剧本</span>
+                        <span class="status-label">Script</span>
                         <div class="status-bar">
                             <div class="status-fill" style="width: 15%"></div>
                         </div>
                     </div>
                     <div class="status-item">
-                        <span class="status-label">美术</span>
+                        <span class="status-label">Art</span>
                         <div class="status-bar">
                             <div class="status-fill" style="width: 30%"></div>
                         </div>
                     </div>
                     <div class="status-item">
-                        <span class="status-label">音乐</span>
+                        <span class="status-label">Music</span>
                         <div class="status-bar">
                             <div class="status-fill" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="status-item">
-                        <span class="status-label">程序</span>
+                        <span class="status-label">Programming</span>
                         <div class="status-bar">
                             <div class="status-fill" style="width: 0%"></div>
                         </div>
@@ -144,10 +144,10 @@
         </div>
     </section>
 
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="footer">
-        <p>🌸 花时计 | Hanashidokei 🌸</p>
-        <p>© 2024 Made with 💝</p>
+        <p>🌸 Hanashidokei 🌸</p>
+        <p>© 2025 Made by Hanashidokei.Project</p>
     </footer>
 
     <script src="script.js"></script>
