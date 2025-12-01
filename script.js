@@ -90,7 +90,7 @@ class PetalAnimation {
 // ========== 海报轮播功能 ==========
 let currentSlideIndex = 0;
 let autoSlideInterval;
-const SLIDE_INTERVAL = 5000; // 5秒自动切换
+const SLIDE_INTERVAL = 7000; // 5秒自动切换
 
 // 显示指定索引的幻灯片
 function showSlide(index) {
