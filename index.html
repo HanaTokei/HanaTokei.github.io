@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花时计 - Hanashidokei</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 花瓣背景 -->
+    <canvas id="petals"></canvas>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-logo">🌸 花时计</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+        </div>
+    </nav>
+
+    <!-- 全屏海报轮播 -->
+    <section class="hero-slider">
+        <!-- 海报1 -->
+        <div class="slide active">
+            <div class="slide-bg">
+                <!-- 替换成你的图片：<img src="images/poster-1.jpg" alt="海报1"> -->
+                <div class="placeholder">
+                    <div class="placeholder-icon">🌸</div>
+                    <h2>主视觉海报 1</h2>
+                    <p>images/poster-1.jpg</p>
+                </div>
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="slide-title">花时计</h1>
+                <p class="slide-subtitle">Hanashidokei</p>
+                <p class="slide-description">时间陪伴成长的故事</p>
+            </div>
+        </div>
+
+        <!-- 海报2 -->
+        <div class="slide">
+            <div class="slide-bg">
+                <div class="placeholder">
+                    <div class="placeholder-icon">⏰</div>
+                    <h2>主视觉海报 2</h2>
+                    <p>images/poster-2.jpg</p>
+                </div>
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="slide-title">时间的具象化</h1>
+                <p class="slide-description">每一刻都开出独特的花朵</p>
+            </div>
+        </div>
+
+        <!-- 海报3 -->
+        <div class="slide">
+            <div class="slide-bg">
+                <div class="placeholder">
+                    <div class="placeholder-icon">💐</div>
+                    <h2>主视觉海报 3</h2>
+                    <p>images/poster-3.jpg</p>
+                </div>
+            </div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+                <h1 class="slide-title">陪伴与成长</h1>
+                <p class="slide-description">在时光中绽放的记忆</p>
+            </div>
+        </div>
+
+        <!-- 切换按钮 -->
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+
+        <!-- 指示点 -->
+        <div class="dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+
+        <!-- 向下滚动提示 -->
+        <div class="scroll-hint">
+            <span>向下滚动</span>
+            <span class="arrow">↓</span>
+        </div>
+    </section>
+
+    <!-- 简介区 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">关于项目</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="quote">"时间会带走一切，但也会留下最珍贵的回忆。"</p>
+                    <p>
+                        <strong>花时计</strong> 是一个关于时间与陪伴的独立游戏项目。<br>
+                        在一个能够具象化时间的世界里，每一段陪伴都会开出独特的花朵。
+                    </p>
+                    <div class="tags">
+                        <span class="tag">叙事冒险</span>
+                        <span class="tag">治愈系</span>
+                        <span class="tag">概念开发中</span>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <h3>联系方式</h3>
+                    <a href="mailto:your@email.com" class="contact-link">
+                        <span>✉️</span>
+                        <span>your@email.com</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span>🐦</span>
+                        <span>@YourTwitter</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span>📺</span>
+                        <span>Bilibili</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="status-box">
+                <h3>开发状态</h3>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="status-label">剧本</span>
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">美术</span>
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">音乐</span>
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">程序</span>
+                        <div class="status-bar">
+                            <div class="status-fill" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>🌸 花时计 | Hanashidokei 🌸</p>
+        <p>© 2024 Made with 💝</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
